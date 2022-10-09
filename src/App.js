@@ -4,7 +4,9 @@ import Home from "./Components/GoogleMaps";
 import Input from "./Components/Input";
 import Display from "./Components/Display";
 import Navbar from "./Components/NavBar";
+
 import './App.css';
+import RandomPlace from "./Components/RandomPlace";
 
 
 
@@ -21,11 +23,15 @@ function App() {
     })
   }, [])
 
+
+
   //console.log(places)
   return (
     <div >
       <Navbar userLocation={userLocation} setPlaces={setPlaces} places={places} />
       {/* < Input userLocation={userLocation} setPlaces={setPlaces} places={places}/> */}
+      <RandomPlace places={places} />
+      
        {places.length >= 1 && 
           places.map(place => {
           return(

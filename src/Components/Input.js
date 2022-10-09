@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 
+
 function Input({ userLocation, setPlaces, places}) {
  const [placeInput, setPlaceInput] = useState(null)  
 
@@ -39,8 +40,8 @@ function Input({ userLocation, setPlaces, places}) {
      //setPlaces('')
 
     }
-    return(
 
+    return(
 
         <><h1>Where The Hell Do You Want To Eat </h1>
             <form onSubmit={handleSubmit}>
@@ -54,4 +55,4 @@ function Input({ userLocation, setPlaces, places}) {
 
 export default Input
             
-        
+  
